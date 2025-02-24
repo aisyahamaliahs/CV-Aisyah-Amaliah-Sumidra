@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Aisyah Amaliah Sumidra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="FOTO CV.jpg" alt="Foto Profil" class="profile-img">
+            <h1>Aisyah Amaliah Sumidra</h1>
+            <p>Email: <a href="mailto:aisyahamaliah99@gmail.com">aisyahamaliah99@gmail.com</a></p>
+            
+        </header>
+
+        <section class="education">
+            <h2>Riwayat Pendidikan</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>MAN 2 KOTA PADANG PANJANG</h3>
+                        <p class="timeline-role">Jurusan IPA (2020 - 2023)</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>TELKOM UNIVERSITY</h3>
+                        <p class="timeline-role">S1 Sistem Informasi (2023 - Sekarang)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="experience">
+            <h2>Pengalaman Organisasi/ Kepanitiaan</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>OSIS – MAN 2 KOTA PADANG PANJANG</h3>
+                    <p class="role">Wakil Ketua Divisi Sosial (2021 – 2022)</p>
+                    <ul>
+                        <li>Bergerak di lingkungan masyarakat.</li>
+                        <li>Melakukan pengabdian masyarakat di sekitar sekolah dan diluar sekolah.</li>
+                        <li>Melaksanakan kegiatan Masa Pengenalan Lingkungan Sekolah.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Usaha Kesehatan Sekolah – MAN 2 KOTA PADANG PANJANG</h3>
+                    <p class="role">Anggota (2021- 2022)</p>
+                    <ul>
+                        <li>Bergerak dalam lingkungan kesehatan sekolah.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Pertukaran Pelajar (Sri Seremban Malaysia) – SMP HIKMAH PADANG PANJANG</h3>
+                    <p class="role"> (2019)</p>
+                    <ul>
+                        <li>Belajar di sekolah Sri Seremban Malaysia.</li>
+                        <li>Ikut serta dalam kegiatan pada sekolah Sri Seremban di Malaysia.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                <h3>Komunitas Sosial Sistem Informasi - HMSI Telkom University</h3>
+                <p class="role">Anggota CPR team (Juni 2024 – Sekarang)</p>
+                <ul>
+                    <li>Bergerak dibidang Creative dan Public Relation.</li>
+                    <li>Mengerjakan design untuk instagram Koalisi.</li>
+                    <li>Melakukan kegiatan pengabdian masyarakat di lingkungan kampus dan di luar kampus.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Tentor Community Sistem Informasi - HMSI Telkom University</h3>
+                <p class="role">Anggota Materi team (Sept 2024 – Sekarang)</p>
+                <ul>
+                    <li>Melakukan kegiatan belajar dan mengajar / sebagai tentor.</li>
+                    <li>Menyiapkan materi pelajaran.</li>
+                    <li>Berkolaborasi dengan tim lain untuk mencapai tujuan bersama.</li>
+                </ul>
+            
+           
+            </div>
+            <div class="card">
+                <h3>Staff Muda Gen IX - Biro Dedikasi Masyarakat HMSI Telkom University</h3>
+                <p class="role">Staff Muda (Okt 2024 – Des 2024)</p>
+                <ul>
+                    <li>Mengembangkan keterampilan kepemimpinan dan orasi.</li>
+                    <li>Mengelola tugas serta berkoordinasi dengan anggota lain.</li>
+                </ul>
+            </div>
+        </section>
+
+    
+        <section class="skills">
+            <h2>Hard Skills</h2>
+            <div class="hard-skill">
+                <div class="bar">
+                    <div class="bar-label">Data Analysis</div>
+                    <div class="bar-fill" style="width: 85%;">85%</div>
+                </div>
+                <div class="bar">
+                    <div class="bar-label">Financial Management</div>
+                    <div class="bar-fill" style="width: 90%;">90%</div>
+                </div>
+                <div class="bar">
+                    <div class="bar-label">Project Documentation</div>
+                    <div class="bar-fill" style="width: 80%;">80%</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="skills">
+            <h2>Soft Skills</h2>
+            <div class="soft-skill">
+                <div class="circle" style="--percentage: 88;">Komunikasi (88%)</div>
+                <div class="circle" style="--percentage: 75;">Leadership (75%)</div>
+                <div class="circle" style="--percentage: 82;">Problem Solving (82%)</div>
+            </div>
+        </section>
+        
+      
+        
+    
+
+
+
+
+    <script>
+        const ctx = document.getElementById('skillChart').getContext('2d');
+        const skillChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Data Analysis', 'Financial Management', 'Project & Documentation', 'Komunikasi', 'Leadership', 'Problem Solving', 'Time Management'],
+                datasets: [{
+                    label: 'Skill Level',
+                    data: [85, 90, 80, 88, 75, 82, 78],
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)'
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
